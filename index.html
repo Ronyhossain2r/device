@@ -1,71 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Device Info Privacy Policy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 8px 0;
-        }
-        p {
-            margin: 15px 0;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Info Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Device Info app (io.bright.deviceinfo). Learn how we handle user data, permissions, and third-party SDKs like AdMob, Firebase Crashlytics, and Google Analytics.">
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    .container {
+      max-width: 850px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #222;
+      border-left: 4px solid #007bff;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    li {
+      margin: 10px 0;
+    }
+    strong {
+      color: #000;
+    }
+    p {
+      margin: 15px 0;
+    }
+    .package {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        width: 92%;
+        padding: 20px;
+        margin: 30px auto;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Device Info Privacy Policy</h1>
+  <h1>Device Info Privacy Policy</h1>
+  <div class="package">Package name: <strong>io.bright.deviceinfo</strong></div>
 
-    <p>Device Info does not collect or store any user data on its own. The app is integrated with a few third-party SDKs that collect some data like crash logs, advertising ID, etc. to work in the required manner. We do not collect any personal data like email address, mobile number, name, address. The data collected by third-party SDKs is transferred and stored in an encrypted manner. The app requires a few permissions to work effectively. The sole purpose of these permissions is to help you in testing your device.</p>
+  <p>Device Info does not collect or store any personal user data directly. However, the app integrates third-party SDKs such as <strong>Google AdMob</strong>, <strong>Firebase Crashlytics</strong>, and <strong>Firebase Analytics (Google Analytics)</strong>. These services may automatically collect some non-personal information to provide ads, analyze app usage, and help improve app performance.</p>
 
-    <h2>Required Permissions</h2>
-    <ul>
-        <li><strong>USE_FINGERPRINT</strong>: Allows an app to use fingerprint hardware. It is used for Fingerprint Test.</li>
-        <li><strong>USE_BIOMETRIC</strong>: Allows an app to use fingerprint hardware. It is used for Fingerprint Test (for higher APIs).</li>
-        <li><strong>VIBRATE</strong>: Allows access to the vibrator. It is used for Vibration Test.</li>
-        <li><strong>INTERNET | ACCESS_WIFI_STATE | ACCESS_NETWORK_STATE</strong>: It is used to show information in the Network Tab of the app.</li>
-        <li><strong>BILLING</strong>: It is required for Remove Ads feature (billing purposes).</li>
-        <li><strong>READ_PHONE_STATE</strong>: Allows read-only access to phone state, including the current cellular network information, the status of any ongoing calls, and a list of any PhoneAccounts registered on the device. It is used in Device Tab of the app.</li>
-        <li><strong>CAMERA</strong>: It is used for the Flashlight Test.</li>
-        <li><strong>MODIFY_AUDIO_SETTINGS</strong>: It is used in Ear speaker and Loudspeaker Test.</li>
-        <li><strong>BLUETOOTH</strong>: Allows applications to connect to paired Bluetooth devices. It is used in Bluetooth Test.</li>
-        <li><strong>BLUETOOTH_CONNECT</strong>: It is also used to connect to paired Bluetooth devices in Android 12+.</li>
-        <li><strong>QUERY_ALL_PACKAGES</strong>: Allows the query of any normal app on the device, regardless of manifest declarations. It is required for showing app-related info.</li>
-    </ul>
+  <h2>Third-Party Services Used</h2>
+  <ul>
+    <li><strong>Google AdMob</strong>: Used to display ads. AdMob may use your Advertising ID and cookies to personalize ads and measure ad performance. Learn more at <a href="https://policies.google.com/technologies/ads" target="_blank">Google Ad Policies</a>.</li>
+    <li><strong>Firebase Crashlytics</strong>: Used for crash reporting and stability monitoring to help identify and fix app issues. Learn more at <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a>.</li>
+    <li><strong>Firebase Analytics</strong>: Used to understand app usage and improve the experience. It collects anonymous usage data. Learn more at <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+  </ul>
 
-    <p>We explicitly ask for some of these permissions. Some of them are automatically granted by Android. If you have any doubts regarding this privacy policy, please send us a message using the form below.</p>
+  <p>All data collected by these third-party SDKs is processed securely and is not personally identifiable. Device Info itself does not access, store, or share any personal user information.</p>
 
-    <div class="footer">
-        <p>&copy; 2025 Device Info. All rights reserved.</p>
-    </div>
+  <h2>Required Permissions</h2>
+  <ul>
+    <li><strong>INTERNET</strong>: Required to access online content and display ads.</li>
+    <li><strong>ACCESS_NETWORK_STATE</strong>: Used to check network connectivity status.</li>
+    <li><strong>ACCESS_WIFI_STATE</strong>: Used to display Wi-Fi information.</li>
+    <li><strong>BLUETOOTH</strong>: Used to access Bluetooth features for device testing.</li>
+    <li><strong>READ_PHONE_STATE</strong>: Used to show network and SIM-related information.</li>
+    <li><strong>QUERY_ALL_PACKAGES</strong>: Used to display the list of installed apps on your device.</li>
+    <li><strong>RECORD_AUDIO</strong>: Used to test the microphone and speaker functionality.</li>
+    <li><strong>VIBRATE</strong>: Used to test vibration functionality.</li>
+  </ul>
+
+  <p>Permissions are only used for their stated purposes and are never misused to collect private data. Some permissions may be automatically granted by Android.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+  <p><a href="mailto:support@deviceinfoapp.com">support@deviceinfoapp.com</a></p>
+
+  <div class="footer">
+    <p>&copy; 2025 Device Info (io.bright.deviceinfo). All rights reserved.</p>
+  </div>
 </div>
 
 </body>
